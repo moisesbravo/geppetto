@@ -23,7 +23,7 @@ class sshpersonalizado (
   } elsif $content {
     $motd_content = $content
   } else {
-    $motd_content = template('motd/motd.erb')
+    $motd_content = template('sshpersonalizado/motd.erb')
   }
 
   if $::kernel == 'Linux' {
